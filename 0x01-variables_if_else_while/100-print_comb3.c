@@ -17,14 +17,15 @@ int main(void)
 			putchar(digitcombo1 + '0');
 			putchar(digitcombo2 + '0');
 
-		if (digitcombo1 != 8 || digitcombo2 != 9)
-		{
-			putchar(',');
-			putchar(' ');
-	}
+			if (digitcombo1 != 8 || digitcombo2 != 9)
+			{
+				putchar(',');
+				putchar(' ');
+			}
+		}
+
+
 	}
 	putchar('\n');
-
 	return (0);
-}
 }
