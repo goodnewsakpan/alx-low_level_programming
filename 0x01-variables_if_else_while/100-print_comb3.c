@@ -8,13 +8,17 @@
 
 int main(void)
 {
-	int digitcombo;
+	int digitcombo1, digitcombo2;
 
-	for (digitcombo = 0; digitcombo <= 9; digitcombo++)
+	for (digitcombo1 = 0; digitcombo1 <= 8; digitcombo1++)
 	{
-		putchar(digitcombo + '0');
-		if (digitcombo != 9)
-	{
+		for (digitcombo2 = digitcombo1 + 1; digitcombo2 <= 9; digitcombo2++)
+		{
+			putchar(digitcombo1 + '0');
+			putchar(digitcombo2 + '0');
+
+		if (digitcombo1 != 8 || digitcombo2 != 9)
+		{
 			putchar(',');
 			putchar(' ');
 	}
@@ -23,4 +27,4 @@ int main(void)
 
 	return (0);
 }
-
+}
