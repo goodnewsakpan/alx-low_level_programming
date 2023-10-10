@@ -1,18 +1,15 @@
 #include <main.h>
 
 /**
- * Main - Entry point
+ * main - Entry point
  * _putchar - writes the character c to stdout
- * @c: The character to print
  *
+ * @c: The character to print
  * Return: On success 1.
  * On error, -1 is returned, and errno is set appropriately.
  */
 
-int _putchar(char c)
-
 int main(void)
-
 {
 	_putchar('_');
 	_putchar('p');
@@ -25,9 +22,4 @@ int main(void)
 	_putchar('\n');
 
 	return (0);
-}
-
-void _putchar(char c)
-{
-	write(1, &c, 1);
 }
