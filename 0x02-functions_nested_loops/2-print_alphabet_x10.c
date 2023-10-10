@@ -1,21 +1,26 @@
 #include "main.h"
 
 /**
- * main - check the code.
+ * print_alphabet_x10 - print 10 times.
  *
  * Return: Always 0.
  */
 
-void print_alphabet(void)
-{
-	Char smallletter = 'a';
-	
-	while (smallletter <= 'z');
-	{
-		_putchar(smallletter);
-		smallletter++;
-	}
-	_putchar('\n');
+void print_alphabet_x10(void)
 
-	return (0);
+{
+	{
+	char alphabet;
+	int i;
+
+	for (i = 0; i < 10; i++)
+	{
+		for (alphabet = 'a'; alphabet <= 'z' ; alphabet++)
+		{
+			_putchar(alphabet);
+		}
+		_putchar ('\n');
+
+	}
 }
+
