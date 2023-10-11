@@ -5,7 +5,7 @@
  * Return: 0.
  */
 
-void times_table(void);
+void times_table(void)
 {
 	int b, multi, r;
 
