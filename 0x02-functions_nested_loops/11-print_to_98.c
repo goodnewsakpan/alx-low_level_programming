@@ -5,7 +5,7 @@
  * @c: the first number
  * return: 0.
  */
-void print_to_98(int c);
+void print_to_98(int c)
 {
 	int i;
 
