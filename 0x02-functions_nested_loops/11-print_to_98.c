@@ -1,10 +1,11 @@
 #include <stdio.h>
 
 /**
- * print_to_98 - prints natural numbers from n to 98
+ * print_to_98 - prints natural numbers from n to 98.
  * @c: the first number
+ * return: 0.
  */
-void print_to_98(int c)
+void print_to_98(int c);
 {
 	int i;
 
