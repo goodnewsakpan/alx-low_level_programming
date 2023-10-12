@@ -1,5 +1,11 @@
 #include "main.h"
 
+/**
+ *  times_table - prints times table
+ *  @n: printed value
+ * Return: 0.
+ */
+void print_times_table(int n)
 {
 	int b, multi, r;
 		if (b <= 15 || b >= 0)
