@@ -1,1 +1,1 @@
-# this is the first day with Betty.
+this task is for pointers and arrays
