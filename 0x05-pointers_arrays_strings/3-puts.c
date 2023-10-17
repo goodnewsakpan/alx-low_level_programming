@@ -1,14 +1,14 @@
 #include "main.h"
 
 /**
- * main - check the code
- *
+ * _puts - print string followed by new line
+ * @str: pointer to the string
  * Return: Always 0.
  */
 
 void _puts(char *str)
 {
-	while (*str)
+	while (*str != '\0')
 	{
 		_putchar(*str);
 		*str++;
