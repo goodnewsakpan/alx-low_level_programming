@@ -8,21 +8,21 @@
 
 void rev_string(char *s)
 {
-	int b = 0
-		length = 0
-	while (s[b] != '\0')
-	{
-		length += 1
-	b++;
-	}
-	char str[100];
+	length = l;
 
-	_puts("Enter a string\n");
-	{
-		gets(b --1);
-		reverse(b);
-	}
-	_puts("Reverse of the string is \"%s\".\n", b);
+	int l = 0;
+	int b;
+	char temp;
 
-	return (0);
+	while (s[l] != '\0')
+	{
+		l++;
+	}
+
+	for (b = 0; b < l / 2; b++)
+	{
+		temp = s[b];
+		s[b] = s[l - b - 1];
+		s[l - b - 1] = temp;
+	}
 }
