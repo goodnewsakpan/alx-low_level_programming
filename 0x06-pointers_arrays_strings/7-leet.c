@@ -1,8 +1,8 @@
 include "main.h"
 
 /**
- * leet - encodes a string into 1337
- * @s: input string.
+ * leet - encodes string into 1337
+ * @s: inputs a string.
  * Return: the pointer dest.
  */
 
