@@ -1,8 +1,8 @@
-include "main.h"
+#include "main.h"
 
 /**
- * leet - encodes string into 1337
- * @s: inputs a string.
+ * leet - encodes a string into 1337
+ * @s: input string.
  * Return: the pointer dest.
  */
 
@@ -26,6 +26,6 @@ char *leet(char *s)
 		}
 		count++;
 	}
-	return (s)
 
+	return (s);
 }
