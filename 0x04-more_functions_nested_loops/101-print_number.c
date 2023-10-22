@@ -10,8 +10,8 @@ void print_number(int n)
 
 {
 	int i;
-	int d = 1;
-	unsigned int x = n;
+	int a = 1;
+	unsigned int p = n;
 	unsigned int y = n;
 	int c = 0;
 
@@ -25,24 +25,24 @@ void print_number(int n)
 		n = n + 1;
 		n = -n;
 		y = n;
-		x = n;
-		x += 1;
+		p = n;
+		p += 1;
 		y += 1;
 	}
 
-	while (x != 0)
+	while (p != 0)
 	{
-		x = x / 10;
+		p = p / 10;
 		c++;
 	}
 	for (i = 1; i < c; i++)
 	{
-		d *= 10;
+		a *= 10;
 	}
 	for (i = 0; i < c; i++)
 	{
-		_putchar(y / d + '0');
-		y = y % d;
-		d = d / 10;
+		_putchar(y / a + '0');
+		y = y % a;
+		a = a / 10;
 	}
 }
