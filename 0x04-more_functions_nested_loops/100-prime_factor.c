@@ -9,20 +9,20 @@
 
 int main(void)
 {
-	unsigned int a = 2;
-	unsigned long n = 612852475143;
+	unsigned int b = 2;
+	unsigned long p = 612852475143;
 
-	while (a != n)
+	while (b != p)
 	{
-		if (n % a == 0)
+		if (p % b == 0)
 		{
-			n = n / a;
+			p = p / b;
 		}
 		else
 		{
-			a++;
+			b++;
 		}
 	}
-	printf("%lu\n", n);
+	printf("%lu\n", p);
 	return (0);
 }
