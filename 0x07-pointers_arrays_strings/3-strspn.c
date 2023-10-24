@@ -1,6 +1,6 @@
 #include "main.h"
 
-/**
+/*
  * *_strspn - gets the length of a prefix
  * @s: string to evaluate
  * @accept: string containing the list of characters to match
@@ -8,26 +8,27 @@
  * Return: number of bytes in the initial segment
  * of s with bytes from accept
  */
+
 unsigned int _strspn(char *s, char *accept)
 {
-	int b, c, d, drag;
+	int i, j, f, flag;
 
 	f = 0;
 
-	for (b = 0; s[b] != '\0'; b++)
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		drag = 0;
-		for (c = 0; accept[c] != '\0'; c++)
+		flag = 0;
+		for (j = 0; accept[j] != '\0'; j++)
 		{
-			if (s[b] == accept[c])
+			if (s[i] == accept[j])
 			{
-				d++;
-				drag = 1;
+				f++;
+				flag = 1;
 			}
 		}
-		if (drag == 0)
+		if (flag == 0)
 		{
-			return (d);
+			return (f);
 		}
 	}
 
