@@ -1,7 +1,7 @@
 #include "main.h"
 
 /*
- * *_strspn - gets the length of a prefix
+ * _strspn - gets the length of a prefix substring
  * @s: string to evaluate
  * @accept: string containing the list of characters to match
  *
@@ -10,6 +10,7 @@
  */
 
 unsigned int _strspn(char *s, char *accept)
+
 {
 	int i, j, f, flag;
 
