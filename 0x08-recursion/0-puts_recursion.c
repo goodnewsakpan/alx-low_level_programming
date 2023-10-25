@@ -14,11 +14,5 @@ void _puts_recursion(char *s)
 
 		return;
 	}
-	_putchar(*s);
-	_puts_recursion(s + 1);
 
-	char str[] = "Life is beautiful!";
-
-	_puts_recursion(str);
-	return (0);
 }
