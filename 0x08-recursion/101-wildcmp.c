@@ -1,25 +1,28 @@
 #include "main.h"
 
 /**
- * wildcmp - compares strings
- * @s1: pointer to string
- * @s2: pointer to string
- * Return: 0
+ * wildcmp - Compare strings
+ * @s1: pointer to string params
+ * @s2: pointer to string params
+ * Return: Always 0 (Success)
  */
 
 int wildcmp(char *s1, char *s2)
 {
-	if (*s2 == '\0')
+	if (*s1 == '\0')
 	{
-		return (*s1 == '\0');
+		if (*s2 != '\0' && *s2 == '*')
+		{
+			return (wildcmp(s1, s2 + 1));
+		}
+		return (*s2 == '\0');
 	}
+
 	if (*s2 == '*')
 	{
-		while (*s2 == '*')
-			s2++;
 		return (wildcmp(s1 + 1, s2) || wildcmp(s1, s2 + 1));
 	}
-	if (*s1 == *s2)
+	else if (*s1 == *s2)
 	{
 		return (wildcmp(s1 + 1, s2 + 1));
 	}
