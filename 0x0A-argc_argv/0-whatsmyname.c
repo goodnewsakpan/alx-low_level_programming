@@ -1,22 +1,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * main - function returning an integer
- * @argv: an array of pointers to the string of arguments
+ * main - Entry point
+ * @argv: an array of line arguments to the string
  * @argc: a count of the arguments supplied
- * Return: Always 0 (success).
+ * Return: Always return 0 (success).
  */
 
-int main(int argc, char *argv[])
+int main(int _attribute_((_unused_)) argc, char *argv[])
 {
-	if (argc > 0)
-	{
-		printf("%s\n", argv[0]);
-		return (0);
-	}
-	else
-	{
-		fprintf(stderr, " .\n");
+	printf("%s\n", argv[0]);
 
-		return (1);
+	return (0);
 }
