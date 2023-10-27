@@ -9,7 +9,14 @@
 
 int main(int argc, char *argv[])
 {
-	while (argc--)
-		printf("%\n", *argv++);
-	return (0);
+	if (argc > 0)
+	{
+		printf("%s\n", argv[0]);
+		return (0);
+	}
+	else
+	{
+		fprintf(stderr, " .\n");
+
+		return (1);
 }
