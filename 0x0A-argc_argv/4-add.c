@@ -5,25 +5,25 @@
  * main - addition of positives
  * @argc: number of arguments
  * @argv: array of arguments
- * Return: 0 on success, 1if it fails;
+ * Return: 0 on success, 1 if it fails;
  */
 
 int main(int argc, char *argv[])
 {
-	int b, c, add = 0;
+	int i, j, sum = 0;
 
-	for (b = 1; b < argc; b++)
+	for (i = 1; i < argc; i++)
 	{
-		for (c = 0; argv[b][c] != '\0'; c++)
+		for (j = 0; argv[i][j] != '\0'; j++)
 		{
-			if (argv[b][c] < '0' || argv[b][c] > '9')
+			if (argv[i][j] < '0' || argv[i][j] > '9')
 			{
 				printf("Error\n");
 				return (1);
 			}
 		}
 
-		sum += atoi(argv[b]);
+		sum += atoi(argv[i]);
 	}
 
 	printf("%d\n", sum);
