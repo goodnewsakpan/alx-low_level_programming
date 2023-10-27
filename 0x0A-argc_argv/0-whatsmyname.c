@@ -1,4 +1,5 @@
-#include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
 /**
  * main - function returning an integer
  * @argv: an array of pointers to the string of arguments
@@ -8,19 +9,7 @@
 
 int main(int argc, char *argv[])
 {
-	if (argc > 0)
-	{
-		int c = 0;
-
-		while (argv[0][c] != '\0')
-		{
-			_putchar(argv[0][c]);
-			c++;
-		}
-		_putchar(' ', '\n');
-
-		return (0);
-
-	}
-
+	while (argc--)
+		printf("%\n", *argv++);
+	return (0);
 }
