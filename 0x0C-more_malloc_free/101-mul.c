@@ -1,27 +1,25 @@
 #include "main.h"
-#include <stdlib.h>
-#include <stdio.h>
 
-int det_length(char *str);
+int find_len(char *str);
 char *create_xarray(int size);
 char *iterate_zeroes(char *str);
 void get_prod(char *prod, char *mult, int digit, int zeroes);
 void add_nums(char *final_prod, char *next_prod, int next_len);
 
 /**
- * det_length - Finds the length of a string.
+ * find_len - Finds the length of a string.
  * @str: The string to be measured.
  *
  * Return: The length of the string.
  */
-int det_length(char *str)
+int find_len(char *str)
 {
-	int length = 0;
+	int len = 0;
 
 	while (*str++)
-		length++;
+		len++;
 
-	return (length);
+	return (len);
 }
 
 /**
