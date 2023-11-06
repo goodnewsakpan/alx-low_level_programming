@@ -1,8 +1,8 @@
 /**
  * struct my_struct - Short description
- * @char: name
- * @float: age
- * @char: owner
+ * @name: char type, name of dog
+ * @age: float type
+ * @owner: chartype 
  *
  * Description: Longer description
  */
