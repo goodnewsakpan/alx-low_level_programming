@@ -18,4 +18,4 @@ struct dog
 		(*d).age = age;
 		d->owner = owner;
 	}
-};
+}
