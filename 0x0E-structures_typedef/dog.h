@@ -1,8 +1,8 @@
-#ifndef _DOG_H
-#define _DOG_H
+#ifndef _DOG_H_
+#define _DOG_H_
 
 /**
- * struct my_struct - Short description
+ * struct - dog
  * @name: char type, name of dog
  * @age: float type
  * @owner: chartype
