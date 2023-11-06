@@ -2,8 +2,8 @@
  * struct my_struct - Short description
  * @name: char type, name of dog
  * @age: float type
- * @owner: chartype 
- *
+ * @owner: chartype
+ * @dog: name of struct
  * Description: Longer description
  */
 
