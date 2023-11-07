@@ -1,16 +1,18 @@
 #include "dog.h"
-#include <stdlibi.h>
+#include <stdlib.h>
 
 /**
- *
- *
- *
+ * _strdup - recopies a string
+ * @str: string to be replicated
+ * Return: the string to the duplicate
  */
 char *_strdup(char *str)
 {
 	int length = 0;
 	char *ret;
+
 	if (str == NULL)
+
 		return (NULL);
 	while (*str++)
 		length++;
@@ -32,6 +34,7 @@ char *_strdup(char *str)
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *d = malloc(sizeo(dog_t));
+
 	if  (!d)
 		return (NULL);
 	d->name = _strdup(name);
