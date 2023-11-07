@@ -19,16 +19,17 @@ char *_strdup(char *str)
 	ret = malloc(sizeof(char) * (length + 1));
 	if (!ret)
 		return (NULL);
-	for (length++; length--)
+	for (length++; length--;)
 		ret[length] = *--str;
 	return (ret);
 }
 /**
+ * new_dog - initializes new dog
+ * @name: the name of dog
+ * @age: the age of the dog
+ * @owner: the owner of the dog
  *
- *
- *
- *
- *
+ * Return: pointer to a new dog
  */
 
 dog_t *new_dog(char *name, float age, char *owner)
