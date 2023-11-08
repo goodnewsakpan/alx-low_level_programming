@@ -3,12 +3,12 @@
 #include <stdio.h>
 
 /**
- * main - function to carry out basic arithmetic operations
+ * main - perform basic arithmetic operations
  * @argc: argument count
  * @argv: array of arguments
- * Return: 0 (success)
+ *
+ * Return: 0
  */
-
 int main(int argc, char **argv)
 {
 	int num1, num2;
@@ -19,11 +19,13 @@ int main(int argc, char **argv)
 		printf("Error\n");
 		exit(98);
 	}
+
 	num1 = atoi(argv[1]);
 	op = argv[2];
 	num2 = atoi(argv[3]);
 
-	if ((*op == '/' || == '%') && (num2 == 0))
+	if ((*op == '/' || *op == '%') &&
+	    (num2 == 0))
 	{
 		printf("Error\n");
 		exit(100);
@@ -34,7 +36,8 @@ int main(int argc, char **argv)
 		printf("Error\n");
 		exit(99);
 	}
-	printf("%i\n", get_op_func(op)(num1, num2));
+
+	printf("%d\n", get_op_func(op)(num1, num2));
 
 	return (0);
 }
