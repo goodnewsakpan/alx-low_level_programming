@@ -1,6 +1,13 @@
 #include "variadic_functions.h"
 #include <stdarg.h>
 
+/**
+ * sum_them_all - function to sum all unsigned integers
+ * @n: number of parameters
+ * @...: number of parameters to calculate
+ * Return: if n == 0 - 0
+ */
+
 int sum_them_all(const unsigned int n, ...)
 {
 	va_list args;
