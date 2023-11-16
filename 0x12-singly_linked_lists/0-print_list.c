@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include "lists.h"
 #include <stddef.h>
+#include <stdlib.h>
 
 /**
  * print_list - elements of a list
@@ -37,16 +38,31 @@ size_t print_list(const list_t *h)
 
 int main(void)
 {
-	list_t node1 = {"Abc", NULL};
-	list_t node2 = {"def", NULL};
-	list_t node3 = {NULL, NULL};
+    list_t *head;
+    list_t *new;
+    list_t hello = {"World", 5, NULL};
+    size_t n;
 
-	node1.next = &node2;
-	node2.next = $node3;
+    head = &hello;
+    new = malloc(sizeof(list_t));
+    if (new == NULL)
+    {
+        printf("Error\n");
+        return (1);
+    }
+    new->str = strdup("Hello");
+    new->len = 5;
+    new->next = head;
+    head = new;
+    n = print_list(head);
+    printf("-> %lu elements\n", n);
 
-	size_t count = print_list(&node1);
+    printf("\n");
+    free(new->str);
+    new->str = NULL;
+    n = print_list(head);
+    printf("-> %lu elements\n", n);
 
-	printf("Number of nodes: %lu\n", count);
-
-	return (0);
+    free(new);
+    return (0);
 }
