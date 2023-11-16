@@ -14,6 +14,7 @@
 size_t print_list(const list_t *h)
 {
 	size_t node_count = 0;
+	int char_count = 0;
 
 	while (h != NULL)
 	{
@@ -23,9 +24,14 @@ size_t print_list(const list_t *h)
 		}
 		else
 		{
-			printf("[%lu] %s\n", node_count, h->str);
+			for (int i = 0; h->str[i] != '\0'; ++i)
+			{
+				char_count++;
+			}
+			printf("[%d] %s\n", char_count, h->str);
 		}
 
+		char_count = 0;
 		node_count++;
 		h = h->next;
 	}
