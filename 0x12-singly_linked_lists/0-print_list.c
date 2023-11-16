@@ -31,9 +31,9 @@ size_t print_list(const list_t *h)
 			printf("[%d] %s\n", char_count, h->str);
 		}
 
+		h = h->next;
 		char_count = 0;
 		node_count++;
-		h = h->next;
 	}
 	return (node_count);
 }
