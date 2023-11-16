@@ -24,11 +24,11 @@ size_t print_list(const list_t *h)
 		}
 		else
 		{
-			for (int i = 0; h->str[i] != '\0'; ++i)
+			/* for (int i = 0; h->str[i] != '\0'; ++i)
 			{
 				char_count++;
-			}
-			printf("[%d] %s\n", char_count, h->str);
+			} */
+			printf("[%u] %s\n", h->len, h->str);
 		}
 
 		h = h->next;
